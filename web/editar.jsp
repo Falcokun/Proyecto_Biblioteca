@@ -21,7 +21,7 @@
     <div class="section">
         <form action="/editarLibro" method="post">
             <div class="modal-content">
-                <h4>Editar Libro</h4>
+                <h4>Detalles del Libro</h4>
 
                 <div class="input-field col s12">
                     <i class="mdi-device-sd-storage prefix"></i>
@@ -55,15 +55,14 @@
                 </div>
 
                 <div class="input-field col s12">
-                    <p>
-                        <input class="with-gap" name="estadoedit" type="radio" id="trueedit" value="true" <c:if test="${libro.activo}">checked</c:if>/>
-                        <label for="trueedit">Disponible</label>
-                    </p>
-
-                    <p>
-                        <input class="with-gap" name="estadoedit" type="radio" id="falseedit" value="false" <c:if test="${!libro.activo}">checked</c:if>/>
-                        <label for="falseedit">No Disponible</label>
-                    </p>
+                    <div class="switch">
+                        <label>
+                            Desactivado
+                            <input type="checkbox" name="estadoedit" id="edit" <c:if test="${libro.activo}">checked</c:if>>
+                            <span class="lever"></span>
+                            Activo
+                        </label>
+                    </div>
                 </div>
                 <br><br>
 

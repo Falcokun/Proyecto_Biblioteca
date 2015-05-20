@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 /**
@@ -28,11 +29,13 @@ public class BorrarLibroServlet extends HttpServlet {
         List<Libro> libroList = MongoInstance.getInstance().getLibros();
         session.setAttribute("libros", libroList);
 
+
+        PrintWriter out = response.getWriter();
+        out.print("true");
+        out.flush();
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin.jsp");
         dispatcher.forward(request, response);
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 }

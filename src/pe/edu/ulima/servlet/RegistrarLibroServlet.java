@@ -27,7 +27,7 @@ public class RegistrarLibroServlet extends HttpServlet {
         String carrera = request.getParameter("carrera");
         String edicion = request.getParameter("edicion");
         int cantidad = Integer.parseInt(request.getParameter("cantidad"));
-        boolean estado = Boolean.parseBoolean(request.getParameter("estado"));
+        boolean estado = "on".equalsIgnoreCase(request.getParameter("estado"));
         String descripcion = request.getParameter("descripcion");
 
         Libro libro = new Libro(titulo, carrera, estado, cantidad, edicion, descripcion, autor);

@@ -86,6 +86,7 @@ public class MongoInstance {
         ops.set("carrera",libro.getCarrera());
         ops.set("edicion",libro.getEdicion());
         ops.set("descripcion",libro.getDescripcion());
+        ops.set("activo",libro.isActivo());
         ds.findAndModify(query,ops);
     }
 }

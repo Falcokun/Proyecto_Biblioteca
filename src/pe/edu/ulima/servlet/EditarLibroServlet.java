@@ -28,16 +28,19 @@ public class EditarLibroServlet extends HttpServlet {
         String carrera = request.getParameter("carreraedit");
         String edicion = request.getParameter("edicionedit");
         int cantidad = Integer.parseInt(request.getParameter("cantidadedit"));
-        boolean estado = Boolean.parseBoolean(request.getParameter("estadoedit"));
+        boolean estado = "on".equalsIgnoreCase(request.getParameter("estadoedit"));
         String descripcion = request.getParameter("descripcionedit");
 
         Libro libro = new Libro(titulo, carrera, estado, cantidad, edicion, descripcion, autor);
+        System.out.println(libro);
         MongoInstance.getInstance().editarLibro(id,libro);
 
         List<Libro> libroList;
         libroList = MongoInstance.getInstance().getLibros();
         session.setAttribute("libros", libroList);
         response.sendRedirect("./admin");
+
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

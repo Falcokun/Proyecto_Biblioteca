@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <nav>
-  <div class="nav-wrapper">
+  <div class="nav-wrapper teal lighten-2">
     <a href="/index.jsp" class="brand-logo">Arq. Software</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="about.jsp">Acerca de</a></li>

@@ -100,15 +100,14 @@
             </div>
 
             <div class="input-field col s12">
-                <p>
-                    <input name="estado" type="radio" id="true" value="true"/>
-                    <label for="true">Disponible</label>
-                </p>
-
-                <p>
-                    <input name="estado" type="radio" id="false" value="false"/>
-                    <label for="false">Deshabilitado</label>
-                </p>
+                <div class="switch">
+                    <label>
+                        Desactivado
+                        <input type="checkbox" name="estado" id="edit">
+                        <span class="lever"></span>
+                        Activo
+                    </label>
+                </div>
             </div>
             <br><br>
 

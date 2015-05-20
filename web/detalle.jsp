@@ -60,15 +60,16 @@
                 </div>
 
                 <div class="input-field col s12">
-                    <p>
-                        <input name="estadoedit" type="radio" id="trueedit" value="true" <c:if test="${libro.activo}">checked</c:if> />
-                        <label for="trueedit">Disponible</label>
-                    </p>
 
-                    <p>
-                        <input name="estadoedit" type="radio" id="falseedit" value="false" <c:if test="${!libro.activo}">checked</c:if>/>
-                        <label for="falseedit">No Disponible</label>
-                    </p>
+                    <div class="switch">
+                        <label>
+                            Desactivado
+                            <input disabled type="checkbox" name="estadoedit" id="edit"
+                                   <c:if test="${libro.activo}">checked</c:if>>
+                            <span class="lever"></span>
+                            Activo
+                        </label>
+                    </div>
                 </div>
                 <br><br>
 
