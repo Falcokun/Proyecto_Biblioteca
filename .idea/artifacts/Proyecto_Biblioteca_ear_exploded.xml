@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="Proyecto Biblioteca:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Proyecto_Biblioteca_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Proyecto_Biblioteca/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="web.war">
+        <element id="artifact" artifact-name="Proyecto Biblioteca:war exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="file-copy" path="$PROJECT_DIR$/lib/jsp-api-2.1.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/jstl-api-1.2.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/proxytoys-1.0.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/servlet-api-2.5.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/javax.persistence.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/morphia-1.0.0-rc0.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/mongo-java-driver-3.0.1.jar" />
+      </element>
+      <element id="library" level="project" name="compass-library" />
+    </root>
+  </artifact>
+</component>
