@@ -3,11 +3,6 @@
   <component name="CompassSettings">
     <option name="compassExecutableFilePath" value="C:/Ruby22-x64/bin/compass.bat" />
     <option name="compassSupportEnabled" value="true" />
-    <option name="importPaths">
-      <list>
-        <option value="C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets" />
-      </list>
-    </option>
   </component>
   <component name="FacetManager">
     <facet type="javaeeApplication" name="javaEEApplication">
@@ -31,7 +26,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="EclipseLink" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="NewPersistenceUnit" />
+        </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
       </configuration>
     </facet>
@@ -44,7 +41,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="GlassFish 4.1.0" level="application_server_libraries" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="compass-library" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
